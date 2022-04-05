@@ -2,7 +2,7 @@ const quotes = [
     {
         quote:
             "Life is too short and sweet to be spent by cribbing and complaining about things. Here are some random quotes about the most wonderful gift that we've got",
-        author: " Life"
+        author: "Life"
     },
     {
         quote:
@@ -26,7 +26,7 @@ const quotes = [
     {
         quote:
             "A critic is someone who never actually goes to the battle, yet who afterwards comes out shooting the wounded.",
-        author: " Tyne Daly"
+        author: "Tyne Daly"
     }
 ];
 
@@ -42,6 +42,7 @@ Vue.createApp({
         getQuote() {
             let randomQuote = quotes[Math.floor(Math.random()*quotes.length)]
             this.quote = randomQuote.quote;
+            this.author = randomQuote.author;
         }
     }
   }).mount('#app')
